@@ -1,0 +1,9 @@
+alias phpunit="sail php ./vendor/bin/phpunit"
+alias dusk="sail artisan dusk"
+alias tests="phpunit ; dusk"
+alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
+alias start="sail up -d"
+alias stop="sail down"
+alias tinker="php artisan tinker"
+alias ide="php artisan ide-helper:generate -H ; php artisan ide-helper:meta ; php artisan ide-helper:models -W"
+alias side="sail artisan ide-helper:generate -H ; sail artisan ide-helper:meta ; sail artisan ide-helper:models -W"
