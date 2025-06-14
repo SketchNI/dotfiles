@@ -44,5 +44,5 @@ function fish_prompt
     end
     printf '%s[%s]%s [%s%s%s@%s%s%s:%s%s%s]%s%s%s ' (set_color a8a8a8) (date "+%H:%M:%S") (set_color a8a8a8) \
      (set_color 5fafff) $USER (set_color d78787) (set_color d787ff) (prompt_hostname) (set_color d78787) \
-     (set_color ffaf87) (prompt_pwd -d 1) (set_color a8a8a8) (set_color 5fafff) $PE (set_color normal)
+     (set_color ffaf87) (prompt_pwd -d 0) (set_color a8a8a8) (set_color 5fafff) $PE (set_color normal)
 end
